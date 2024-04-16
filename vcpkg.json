@@ -1,0 +1,5 @@
+{
+  "dependencies": [
+    { "name": "llvm", "default-features": false, "features": ["default-targets"] }
+  ]
+}

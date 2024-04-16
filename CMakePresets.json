@@ -1,0 +1,18 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 29, "patch": 2 },
+  "configurePresets": [
+    {
+      "name": "arm64-osx",
+      "generator": "Ninja",
+      "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "binaryDir": "target/arm64-osx",
+      "cacheVariables": {
+        "VCPKG_TARGET_TRIPLET": "arm64-osx",
+        "VCPKG_INSTALL_OPTIONS": "--no-print-usage",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "1",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}
