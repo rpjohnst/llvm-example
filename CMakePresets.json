@@ -3,6 +3,18 @@
   "cmakeMinimumRequired": { "major": 3, "minor": 29, "patch": 2 },
   "configurePresets": [
     {
+      "name": "x64-windows",
+      "generator": "Ninja",
+      "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "binaryDir": "target/x64-windows",
+      "cacheVariables": {
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "VCPKG_INSTALL_OPTIONS": "--no-print-usage",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "1",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
       "name": "arm64-osx",
       "generator": "Ninja",
       "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
